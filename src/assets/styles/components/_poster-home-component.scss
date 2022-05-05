@@ -1,0 +1,68 @@
+
+
+/*-----------------------------------------------------------------------------------------------------*\
+*  Componente Poster de Inicio
+\*-----------------------------------------------------------------------------------------------------*/
+
+// code that will only run if CSS Grid is supported by the browser 
+@supports (display: grid) {
+
+  .container-inicio {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;                //3 columnas, 
+    grid-template-rows: repeat(2, 15vh auto ) 10vh;    //5 Filas: header + foto + (datos * 2) + footer
+    align-items: start;
+    row-gap: 10px;
+    justify-content: space-between;
+
+    .poster {
+      justify-items: center;
+      grid-column-start: 2;
+      grid-column-end:3 ;
+      @media ( max-width: 1266px ) {
+        grid-column: 1/-1;
+      }
+    }
+  
+    .poster-title {
+      grid-column: 1/-1;
+    }
+  
+    .poster-data {
+      grid-column: 1/4;
+      display: flex;
+      //flex-wrap: wrap;
+      .data-img-poster {
+        width: 16.6%;
+      }
+      
+    }
+  }
+}
+
+// code that will only run if CSS Grid is not supported by the browser 
+@supports not (display: grid) {
+  
+  .container-inicio:nth-child(n) {
+    float: left;
+  }
+
+  .poster {
+    width: 50%;
+    margin: 0 auto;
+    @media ( max-width: 1266px ) {
+      width: 80%;
+    }
+  }
+  .poster-data {
+    width:90%;   //grid-column: 2/3;
+    text-align: center;
+    margin: 0 auto;
+
+    .data-img-poster {
+      width: 30%;
+    }
+
+  }
+}
+

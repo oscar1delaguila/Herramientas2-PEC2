@@ -1,0 +1,57 @@
+
+/*-----------------------------------------------------------------------------------------------------*\
+* Estilos genéricos que se aplicarán a todo el documento HTML.
+\*-----------------------------------------------------------------------------------------------------*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*\
+* Estilos estructurales de bootstrap
+\*-----------------------------------------------------------------------------------------------------*/
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+  padding: 2vh 0;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*\
+* Estilos genéricos No estructurales
+\*-----------------------------------------------------------------------------------------------------*/
+
+
+.g-icons-color-fontawesome {
+  color: $icons-color;
+}
+
+.g-links-header {
+  flex: 3;
+  text-align: right;
+}
+
+.g-links-footer {
+  flex: 50%;
+  text-align: left;
+}
+
+.g-logo {
+  flex: 25%;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.g-social-icons-footer {
+  flex: 25%;
+}
+
+  
+.g-color-secondary {
+  color:$secondary     //variable de bootstrap
+}
