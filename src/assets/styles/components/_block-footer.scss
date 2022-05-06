@@ -4,30 +4,29 @@
 *  Sección de estudios académicos
 \*-----------------------------------------------------------------------------------------------------*/
 
-.block-footer {
+.c-block-footer {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
-  background-color: $primary; //de bootstrap
   color: white;
+  background-color: $primary; //de bootstrap
   @media ( max-width: $mqMinWidth ) {
-    font-size:0.8rem;
     flex-direction: column;
+    font-size:0.8rem;
+  }
+
+  .c-block-footer__part-small {
+    flex:1 ;
+    @media ( max-width: $mqMinWidth ) {
+      width: 100%;
+    }
+  }
+  
+  .c-block-footer__part-big {
+    flex:2 ;
+    @media ( max-width: $mqMinWidth ) {
+      width: 100%;
+    }
   }
 }
 
-
-.part-small-block1-footer {
-  flex:1 ;
-  @media ( max-width: $mqMinWidth ) {
-    width: 100%;
-  }
-}
-
-
-.part-big-block1-footer {
-  flex:2 ;
-  @media ( max-width: $mqMinWidth ) {
-    width: 100%;
-  }
-}

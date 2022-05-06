@@ -4,17 +4,18 @@
 \*-----------------------------------------------------------------------------------------------------*/
 
 header {
-  width: 90%;
-  margin: 0 auto;
   display: flex;
+  grid-column: 1/-1;                              //va desde la primera columna hasta la última
+  align-items: center;                            //alinea a la misma altura verticalmente
+  width: 90%;
   height: 10vh;
   padding: 0 1rem;
+  margin: 0 auto;
   font-size: 2rem;
   color: #fff;
   background-color: $primary;
-  align-items: center;                            //alinea a la misma altura verticalmente
-  grid-column: 1/-1;                              //va desde la primera columna hasta la última
 }
+
 
 footer{
   grid-column: 1/-1;
@@ -28,7 +29,6 @@ footer{
 * Body
 \*-----------------------------------------------------------------------------------------------------*/
 
-  
 body {
   margin: 0;
   font-family: $font-family-sans-serif;
@@ -48,6 +48,7 @@ ul li {
   margin-top: 5vh;
 }
 
+
 ol li {
   text-align: left;
 }
@@ -64,11 +65,11 @@ header ul li {
 \*-----------------------------------------------------------------------------------------------------*/
 
 a {
-  font-size: 1.3rem;
   margin-right: 2vw;
+  font-size: 1.3rem;
+  color: $links-color;
   text-decoration: none;
   vertical-align: middle;
-  color: $links-color;
   @media ( max-width: $mqMinWidth ) {
     font-size:0.8rem;
   }
@@ -81,18 +82,19 @@ a {
 \*-----------------------------------------------------------------------------------------------------*/
 
 h1 {
-  text-align: center;
   padding: 2vh;
   font-size: 4vh;
   color: burlywood;
+  text-align: center;
 }
 
+
 h3 {
-  text-align: center;
-  padding: 2vh;
   font-size: 2vh;
   color: chocolate;
+  text-align: center;
 }
+
 
 h4 {
   text-align: left;
@@ -121,8 +123,8 @@ img {
 
   
 figcaption {
-  text-transform: capitalize;
-  font-weight: bolder;
   padding-top:1vh ;
+  font-weight: bolder;
+  text-transform: capitalize;
 }
 

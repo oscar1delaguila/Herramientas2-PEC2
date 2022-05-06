@@ -3,7 +3,6 @@
 * Estilos genéricos que se aplicarán a todo el documento HTML.
 \*-----------------------------------------------------------------------------------------------------*/
 
-
 * {
   box-sizing: border-box;
 }
@@ -15,9 +14,9 @@
 \*-----------------------------------------------------------------------------------------------------*/
 
 .row{
-  margin-left: 0;
-  margin-right: 0;
   padding: 2vh 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 
