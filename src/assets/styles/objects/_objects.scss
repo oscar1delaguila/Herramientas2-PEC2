@@ -1,6 +1,6 @@
 
 /*-----------------------------------------------------------------------------------------------------*\
-*  Objeto 
+*  Objetos 
 \*-----------------------------------------------------------------------------------------------------*/
 
 
@@ -27,4 +27,16 @@
   padding-right: 1vw;
   clear: both;
   border-radius: 4px;
+}
+
+@supports not (display: grid) {
+  .o-container-inicio-poster-img {
+    width: 30%;
+  }
+}
+
+@supports (display: grid) {
+  .o-container-inicio-poster-img {
+    width: 16.6%;
+  }
 }

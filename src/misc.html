@@ -25,7 +25,7 @@
             <div class="col-sm-1 " ></div>
             <!-- video de youtube -->
             <div class="col-sm-4 col-12 ">
-              <lite-youtube class="o-video-item-band" params="controls=2&fs=1&enablejsapi=1" videoid="UojBaKX5Vz4" >
+              <lite-youtube class="o-video-item-band" videoid="UojBaKX5Vz4" params="controls=2&fs=1&enablejsapi=1"  >
               </lite-youtube>
             </div>
           <!-- texto video -->
@@ -163,12 +163,12 @@
           <form>
             
             <div class="mb-3">
-              <label for="emailInput" class="form-label">Tu direccción de email:</label>
-              <input type="email" class="form-control form-control-lg form-control-sm" id="email" placeholder="name@example.com">
+              <label class="form-label" for="emailInput" >Tu direccción de email:</label>
+              <input class="form-control form-control-lg form-control-sm" id="email" type="email" placeholder="name@example.com">
             </div>
             
             <div class="mb-3">
-              <label for="bandFormTextArea" class="form-label">Quisiera información sobre...</label>
+              <label class="form-label" for="bandFormTextArea" >Quisiera información sobre...</label>
               <textarea class="form-control form-control-lg form-control-sm" id="bandFormTextArea" rows="4"></textarea>
             </div>
 
@@ -184,15 +184,15 @@
 						
 
 						<div class="mb-4">
-							<input type="checkbox" id="politica-privacidad" required name="politica-privacidad">
+							<input id="politica-privacidad" name="politica-privacidad" type="checkbox"  required >
 							<label for="politica-privacidad">He leído y acepto la política de privacidad</label>
 						</div>
             <div class="mb-4">
-              <div><input id="btn-enviar-contacto" type="button" name="enviar" value="Enviar" class="btn btn-primary btn-lg"  ></div>
+              <div><input class="btn btn-primary btn-lg" id="btn-enviar-contacto" name="enviar" type="button"  value="Enviar"></div>
             </div>
 
 
-            <div class="alert alert-success" role="alert" id="mensaje-de-recibido-contacto"></div>
+            <div class="alert alert-success" id="mensaje-de-recibido-contacto" role="alert" ></div>
 
           </form>
 

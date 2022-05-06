@@ -30,9 +30,6 @@
     .c-container-inicio__poster-data {
       display: flex;
       grid-column: 1/4;
-      .data-img-poster {
-        width: 16.6%;
-      }
     }
   }
 }
@@ -55,9 +52,6 @@
     width:90%;   //grid-column: 2/3;
     margin: 0 auto;
     text-align: center;
-    .data-img-poster {
-      width: 30%;
-    }
   }
 }
 

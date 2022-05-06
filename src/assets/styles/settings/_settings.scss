@@ -19,19 +19,15 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 $icons-color: #041f5a;
 $font-color: #283747;
 $links-color: aqua;
-a {
-  color:aquamarine
-
-}
-$band-AT-background-color:azure;
+$bandas-musica-background-color:azure;
 
 
 //funcion color de sass.
-$at-bg: color.scale($band-AT-background-color, $lightness: 70%);
+$bandas-musica-bg: color.scale($bandas-musica-background-color, $lightness: 70%);
 
 
 /*$theme-colors de bootstrap: */
- $primary: #1b3d87;
+//$primary: #1b3d87;
 
  
 /*-----------------------------------------------------------------------------------------------------*\
